@@ -174,8 +174,8 @@ function App() {
           </div>
         </section>
 
-        <section className="output-grid" aria-label="Generated outputs">
-          <OutputCard icon={<Brain />} label="Generated plan" title={goalCopy[goal].title} body={`Use a ${intensity} intensity setting and keep the session to ${plan.minutes} minutes today.`} />
+        <section className="output-grid" aria-label="Plan outputs">
+          <OutputCard icon={<Brain />} label="Daily plan" title={goalCopy[goal].title} body={`Use a ${intensity} intensity setting and keep the session to ${plan.minutes} minutes today.`} />
           <OutputCard icon={<CloudSun />} label="Environment guidance" title={plan.indoor ? 'Move indoors' : 'Outdoor OK'} body={plan.environment} />
           <OutputCard icon={<Activity />} label="Body context" title={`${plan.waistPercentile}th percentile waist`} body={`Your height is around the ${plan.heightPercentile}th percentile in the reference dataset.`} />
         </section>
